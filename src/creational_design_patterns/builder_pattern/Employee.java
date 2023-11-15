@@ -13,38 +13,37 @@ public class Employee {
     String fatherName;
     String panNumber;
 
-    public Employee setFirstName(String firstName) {
-        this.firstName = firstName;
-        return this;
+   public Employee(EmployeeBuilder employeeBuilder){
+       this.firstName = employeeBuilder.firstName;
+       this.middleName = employeeBuilder.middleName;
+       this.lastName = employeeBuilder.lastName;
+       this.emailID = employeeBuilder.emailID;
+       this.fatherName = employeeBuilder.fatherName;
+       this.panNumber = employeeBuilder.panNumber;
+   }
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public Employee setMiddleName(String middleName) {
-        this.middleName = middleName;
-        return this;
+    public String getMiddleName() {
+        return middleName;
     }
 
-    public Employee setLastName(String lastName) {
-        this.lastName = lastName;
-        return this;
+    public String getLastName() {
+        return lastName;
     }
 
-    public Employee setEmailID(String emailID) {
-        this.emailID = emailID;
-        return this;
+    public String getEmailID() {
+        return emailID;
     }
 
-    public Employee setFatherName(String fatherName) {
-        this.fatherName = fatherName;
-        return this;
+    public String getFatherName() {
+        return fatherName;
     }
 
-    public Employee setPanNumber(String panNumber) {
-        this.panNumber = panNumber;
-        return this;
-    }
-
-    public Employee getEmployee(){
-        return new Employee();
+    public String getPanNumber() {
+        return panNumber;
     }
 
     @Override

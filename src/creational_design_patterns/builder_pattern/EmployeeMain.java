@@ -7,7 +7,7 @@ package creational_design_patterns.builder_pattern;
 
 public class EmployeeMain {
     public static void main(String[] args) {
-        Employee employee = new Employee().setFirstName("Ravi").setFatherName("Rajdeep").setPanNumber("AFDGD345");
-        System.out.print(employee);
+        Employee employee1 = new Employee(new EmployeeBuilder("Priya","priya@test.com","Uday","FGDSFD3543"));
+        System.out.println(employee1);
     }
 }
