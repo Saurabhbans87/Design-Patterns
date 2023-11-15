@@ -3,7 +3,7 @@
  * Date: 15/11/23
  * Project Name: Design-Patterns
  */
-package creational_design_patterns.builder_pattern;
+package creational_design_patterns.builder_pattern.employee;
 
 public class EmployeeBuilder {
     String firstName;
