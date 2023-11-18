@@ -9,5 +9,6 @@ public class DatbaseConnectionMain {
     public static void main(String[] args) {
         DatabaseConnection.getDataBaseConnectionInstance().getDataBaseConnectionDetails();
         DatabaseConnection.getDataBaseConnectionInstanceMultiThreaded().getDataBaseConnectionDetailsMultiThreaded();
+        DatabaseConnection.getDataBaseConnectionInstanceDoubleCheck().getDataBaseConnectionDetailsDoubleCheck();
     }
 }
