@@ -8,5 +8,6 @@ package design.patterns.creational.singleton.lazy_version;
 public class DatbaseConnectionMain {
     public static void main(String[] args) {
         DatabaseConnection.getDataBaseConnectionInstance().getDataBaseConnectionDetails();
+        DatabaseConnection.getDataBaseConnectionInstanceMultiThreaded().getDataBaseConnectionDetailsMultiThreaded();
     }
 }

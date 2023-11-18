@@ -10,13 +10,30 @@ public class DatabaseConnection {
 
     private DatabaseConnection() {
     }
+    //This will in multithreaded environment
     public static DatabaseConnection getDataBaseConnectionInstance(){
         if(databaseConnection==null){
             databaseConnection = new DatabaseConnection();
         }
         return databaseConnection;
     }
+    //To make a singleton class thread safe, getDataBaseConnectionInstanceMultiThreaded() method is made synchronized
+    // so that multiple threads can’t access it simultaneously
+    public static DatabaseConnection getDataBaseConnectionInstanceMultiThreaded(){
+        if(databaseConnection==null){
+            synchronized (DatabaseConnection.class){
+                databaseConnection = new DatabaseConnection();
+            }
+        }
+        return databaseConnection;
+    }
+
     void getDataBaseConnectionDetails(){
         System.out.println("connection successful");
     }
+
+    void getDataBaseConnectionDetailsMultiThreaded(){
+        System.out.println("connection successful in multithreaded");
+    }
+
 }
