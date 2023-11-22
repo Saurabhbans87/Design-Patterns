@@ -15,6 +15,8 @@ public class XmlToJsonData implements JsonData {
 
     @Override
     public String getJsonData() {
+        //in this method will write the logic to convert xml data to json data...
+        //Here just showing return type but use logic to convert to json data.
         String xmlData1 = xmlData.getXmlData();
         return "{\"product\": {\"amount\": \"10000\"}}";
     }
