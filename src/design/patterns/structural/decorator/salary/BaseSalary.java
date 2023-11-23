@@ -11,4 +11,9 @@ public class BaseSalary implements Salary {
     public double baseSalary() {
         return 100000;
     }
+
+    @Override
+    public String getSalary() {
+        return " ";
+    }
 }

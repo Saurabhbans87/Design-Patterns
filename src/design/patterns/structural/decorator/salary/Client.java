@@ -7,10 +7,9 @@ package design.patterns.structural.decorator.salary;
 
 public class Client {
     public static void main(String[] args) {
-        Salary salary = new BaseSalary();
-        System.out.println("Basic salary is " +salary.baseSalary());
-
-        Salary salaryWithIncentive = new IncentiveSalary(new BaseSalary());
-        System.out.println("Salary with incentive " + salaryWithIncentive.baseSalary());
+        Salary salary = new IncentiveSalary(new BaseSalary());
+        System.out.println(salary.getSalary());
+        System.out.println(salary.baseSalary());
     }
 }
+

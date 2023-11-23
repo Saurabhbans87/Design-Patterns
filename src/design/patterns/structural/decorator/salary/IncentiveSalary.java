@@ -12,6 +12,11 @@ public class IncentiveSalary extends SalaryDecorator{
 
     @Override
     public double baseSalary() {
-        return super.baseSalary()+50000;
+        return salary.baseSalary() + 50000;
+    }
+
+    @Override
+    public String getSalary() {
+        return "Salary with incentive" + salary.getSalary();
     }
 }

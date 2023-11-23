@@ -16,4 +16,5 @@ public abstract class SalaryDecorator implements Salary {
     public double baseSalary() {
         return salary.baseSalary();
     }
+
 }
