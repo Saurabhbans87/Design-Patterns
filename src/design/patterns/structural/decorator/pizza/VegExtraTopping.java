@@ -17,6 +17,6 @@ public class VegExtraTopping extends DecoratorVegPizza{
 
     @Override
     public String pizza() {
-        return "with topping" +pizza.pizza();
+        return "with topping " +pizza.pizza();
     }
 }

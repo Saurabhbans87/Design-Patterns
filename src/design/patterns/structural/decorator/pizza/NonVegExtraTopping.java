@@ -5,14 +5,18 @@
  */
 package design.patterns.structural.decorator.pizza;
 
-public class NonVegPizza implements Pizza{
+public class NonVegExtraTopping extends DecoratorNonVegPizza{
+    public NonVegExtraTopping(Pizza pizza) {
+        super(pizza);
+    }
+
     @Override
     public double pizzaCost() {
-        return 200;
+        return pizza.pizzaCost() + 50;
     }
 
     @Override
     public String pizza() {
-        return " ";
+        return "with topping "+pizza.pizza();
     }
 }
