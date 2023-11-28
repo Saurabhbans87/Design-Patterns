@@ -14,7 +14,7 @@ public class Flyweight {
     public static PlayMusicTrack MusicTrack(String trackName, String artistName, String albumName){
         String key = trackName+artistName+albumName;
         if(!stringPlayMusicTrackMap.containsKey(key)){
-            stringPlayMusicTrackMap.put(key,new PlayMusicTrack("Dil is "," by Arjit Singh"," Love Album"));
+            stringPlayMusicTrackMap.put(key,new PlayMusicTrack("Dil","Arjit","Love"));
         }
         return stringPlayMusicTrackMap.get(key);
     }

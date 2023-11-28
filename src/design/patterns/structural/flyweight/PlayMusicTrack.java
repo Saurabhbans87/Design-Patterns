@@ -18,6 +18,6 @@ public class PlayMusicTrack implements Music {
 
     @Override
     public void playMusic(String subscriber) {
-        System.out.println(" " +trackName +" is playing " +artistName +" from " +albumName);
+        System.out.println(" " +trackName +" is playing by " +artistName +" from " +albumName);
     }
 }
