@@ -6,17 +6,14 @@
 package design.patterns.structural.facade.iot;
 
 public class FacadeDesign {
-    private Fan fan  = new Fan();
-    private Light light = new Light();
-    private Music music = new Music();
-
-    public FacadeDesign(Fan fan, Light light, Music music) {
-        this.fan = fan;
-        this.light = light;
-        this.music = music;
-    }
+    private Fan fan;
+    private Light light;
+    private Music music;
 
     public FacadeDesign() {
+        this.fan = new Fan();
+        this.light = new Light();
+        this.music = new Music();
     }
 
     public void startIotSystem(String iotDevice, String iotDeviceFunction){
