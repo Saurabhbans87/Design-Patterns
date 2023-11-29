@@ -6,13 +6,17 @@
 package design.patterns.behavioral.chain.vending;
 
 public class FiftyRs implements Vending{
-    @Override
-    public void processPrroduct(int amount) {
+    private Vending vending;
 
+    public void setVending(Vending vending) {
+        this.vending = vending;
     }
-
     @Override
-    public void nextNext(Vending vending) {
-
+    public void processTransaction(int amount) {
+            System.out.println("50 Rupees Item");
+    }
+    @Override
+    public void processNextTransaction(Vending vending) {
+            this.vending = vending;
     }
 }

@@ -7,17 +7,18 @@ package design.patterns.behavioral.chain.vending;
 
 public class TwentyRs implements Vending{
     private Vending vending;
+
     @Override
-    public void processPrroduct(int amount) {
+    public void processTransaction(int amount) {
         if(amount==20){
-            System.out.println("Rupees 50 item got");
+            System.out.println("10 Rupees Item");
         }else {
-            vending.processPrroduct(amount);
+            vending.processTransaction(amount);
         }
     }
 
     @Override
-    public void nextNext(Vending vending) {
-
+    public void processNextTransaction(Vending vending) {
+        this.vending = vending;
     }
 }
