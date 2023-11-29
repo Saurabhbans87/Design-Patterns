@@ -1,4 +1,5 @@
-Think of the Command pattern like ordering food at a restaurant. You tell the waiter what dishes you want to order, but you don't need to know how the chef cooks each dish or the ingredients used. The waiter (like a command) carries your order (the action) to the kitchen (receiver), and the chef (receiver) knows how to prepare each dish based on the order given. You control what you want, but you don't have to worry about the cooking process.
+Command Design Pattern -
+Command design pattern is a behavioral design pattern that converts a request into an object with all the required information such as what method to call, arguments, etc.
 
 Components of the Command Pattern:
 Command:
