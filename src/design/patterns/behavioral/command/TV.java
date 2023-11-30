@@ -4,7 +4,7 @@
  * Project Name: Design-Patterns
  */
 package design.patterns.behavioral.command;
-
+/* Receiver */
 public class TV {
     public void turnOn() {
         System.out.println("TV is ON");

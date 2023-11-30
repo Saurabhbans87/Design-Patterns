@@ -4,7 +4,7 @@
  * Project Name: Design-Patterns
  */
 package design.patterns.behavioral.command;
-
+/* Invoker */
 public class RemoteControl {
     private Command command;
 

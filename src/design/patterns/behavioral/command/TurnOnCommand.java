@@ -4,7 +4,9 @@
  * Project Name: Design-Patterns
  */
 package design.patterns.behavioral.command;
-
+/*
+Concrete command
+ */
 public class TurnOnCommand implements Command{
     private TV tv;
 
