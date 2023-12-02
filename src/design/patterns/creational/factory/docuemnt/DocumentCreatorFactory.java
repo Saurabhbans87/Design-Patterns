@@ -7,17 +7,16 @@ package design.patterns.creational.factory.docuemnt;
 
 public class DocumentCreatorFactory {
     DocumentCreator getDocument(String documentType){
-        if(documentType.equals(DocumentType.PDF)){
-            PDF pdf = new PDF();
-            return pdf;
-        } else if (documentType.equals(DocumentType.WORD_DOCUMENT)) {
+        if(documentType.equals("PDF")){
+            return new PDF();
+        } else if (documentType.equals("WORD")) {
             return new Word();
-        } else if (documentType.equals(DocumentType.EXCEL)) {
+        } else if (documentType.equals("POWER")) {
             return new Excel();
-        } else if (documentType.equals(DocumentType.POWER_POINT)) {
+        } else if (documentType.equals("EXCEL")) {
             return new Power();
         }else {
-            throw new IllegalArgumentException("Please provide correct douemnt type");
+            throw new IllegalArgumentException("Please provide correct document type");
         }
     }
 }

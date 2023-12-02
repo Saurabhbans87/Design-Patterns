@@ -8,16 +8,16 @@ package design.patterns.creational.factory.docuemnt;
 public class Cleint {
     public static void main(String[] args) {
         DocumentCreatorFactory documentCreatorFactory = new DocumentCreatorFactory();
-        DocumentCreator pdfDocument = new PDF();
+        DocumentCreator pdfDocument = documentCreatorFactory.getDocument("PDF");
         pdfDocument.createDocument();
-        System.out.println("************************PDF Document******************************");
-        DocumentCreator wordDocument = new Word();
+        System.out.println("************************WORD Document******************************");
+        DocumentCreator wordDocument = documentCreatorFactory.getDocument("WORD");
         wordDocument.createDocument();
         System.out.println("************************Power Point Document******************************");
-        DocumentCreator powerDocument = new Power();
+        DocumentCreator powerDocument = documentCreatorFactory.getDocument("POWER");
         powerDocument.createDocument();
         System.out.println("************************Excel Document******************************");
-        DocumentCreator excelDocument = new Excel();
+        DocumentCreator excelDocument = documentCreatorFactory.getDocument("EXCEL");
         excelDocument.createDocument();
     }
 }
