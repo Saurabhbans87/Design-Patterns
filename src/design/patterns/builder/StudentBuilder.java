@@ -8,6 +8,9 @@ public class StudentBuilder implements IStudent {
     private String secondaryEmail;
     private String primaryMobileNumber;
     private String secondaryMobileNumber;
+    public Student build() {
+        return new Student(this);
+    }
 
     @Override
     public StudentBuilder firstName(final String firstName) {
@@ -49,10 +52,6 @@ public class StudentBuilder implements IStudent {
     public StudentBuilder secondaryMobileNumber(final String secondaryMobileNumber) {
         this.secondaryMobileNumber = secondaryMobileNumber;
         return this;
-    }
-
-    public Student build() {
-        return new Student(this);
     }
 
     public String getFirstName() {
