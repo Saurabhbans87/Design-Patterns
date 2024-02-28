@@ -10,6 +10,7 @@ public class Client {
         Bank bank = new RetailBankProxy();
         bank.deposit(1000000);
         bank.getBalance();
+        System.out.println("*******************************************************");
         bank.withdraw(100000);
     }
 }
