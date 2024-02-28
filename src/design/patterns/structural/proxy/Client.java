@@ -12,5 +12,7 @@ public class Client {
         bank.getBalance();
         System.out.println("*******************************************************");
         bank.withdraw(100000);
+        System.out.println("*******************************************************");
+        bank.withdraw(200000);
     }
 }
