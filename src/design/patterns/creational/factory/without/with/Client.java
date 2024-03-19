@@ -7,9 +7,7 @@ package design.patterns.creational.factory.without.with;
 
 public class Client {
     public static void main(String[] args) {
-        Transport transport = new ByRoad();
         Fcatory fcatory = new Fcatory();
-        fcatory.build(TransportType.BYROAD);
-        transport.delivered();
+        fcatory.build(TransportType.BYROAD).delivered();
     }
 }
