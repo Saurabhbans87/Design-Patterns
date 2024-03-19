@@ -32,8 +32,8 @@ public class EmployeeBuilder {
         return this;
     }
 
-    public EmployeeBuilder setCompanyName (String companyName) {
-        companyName = companyName;
+    public EmployeeBuilder setCompanyName(String companyName) {
+        this.companyName = companyName;
         return this;
     }
     public Employee build(){
