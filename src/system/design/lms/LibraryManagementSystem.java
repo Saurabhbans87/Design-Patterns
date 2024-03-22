@@ -15,7 +15,8 @@ public class LibraryManagementSystem {
         List<Book> bookList = new ArrayList<>();
         bookList.add(new Book("Harry Potter","12345",fiction));
         bookList.add(new Book("Gandhi","225234",nonFiction));
-        System.out.println(bookList);
+        System.out.println("Book in the library");
+        bookList.forEach((book)->System.out.println(book));
 
     }
 
